@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>CloudSync</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="toggle">
+            <i class='bx bx-cloud-download'></i>
+            <p class="job hide">1</p>
+        </div>
+        <div class="card">
+            <div class="storage-box">
+                <h1>Cloud storage</h1>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <p>256 bytes of 1TB used</p>
+            </div>
+            <div class="status-box">
+
+                <div class="status-item">
+                    <div class="file-loader">
+                        <div class="circle">
+                            <div class="inner-circle">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <h2>File syncing</h2>
+                        <p class="file-percent">Waiting</p>
+                    </div>
+                    <i id= "fgear" class='bx bx-cog hide' ></i>
+                </div>
+                <hr>
+
+
+                <div class="status-item">
+                    <div class="loader">
+                        <i class='bx bx-circle'></i>
+                    </div>
+                    <div class="item-content">
+                        <h2>Updating cloud</h2>
+                        <p class="cloud-percent">Waiting</p>
+                    </div>
+                    <i  id="cgear" class='bx bx-cog hide' ></i>
+                </div>
+                <hr>
+
+
+                <div class="status-item">
+                    <div class="solution-loader">
+                        <i class='bx bx-circle'></i>
+                    </div>
+
+                    <div class="item-content">
+                        <h2>Updating solutions</h2>
+                        <p class="solution-percent">Waiting</p>
+                    </div>
+                    <i  id="sgear" class='bx bx-cog hide' ></i>
+                </div>
+
+            </div>
+            <button class="downloads">Go to downloads</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</body>
+</html>

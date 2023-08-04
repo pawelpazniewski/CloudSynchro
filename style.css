@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(246,250,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 65%;
+}
+
+.wrapper {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  
+}
+
+.toggle {
+    position:relative;
+    font-size: 2rem;
+    padding:0.3rem 0.6rem;
+    background-color: #fff;
+    border-radius:8px;
+    margin-bottom:15px;
+    outline:10px solid rgb(222,237,252);
+    box-shadow: 0 10px 10px -5px rgba(0,0,0,0.3);
+}
+
+.toggle:hover {
+    box-shadow: none;
+    transform: translateY(-1px);
+}
+
+.toggle:active {
+    box-shadow: none;
+    transform: translateY(1px);
+}
+
+.job {
+    position: absolute;
+    top:0;
+    right:0px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: green;
+    color: white;
+    padding:0.1rem;
+    width:1.2rem;
+    text-align: center;
+    border-radius: 50px;
+}
+
+/* .percent::after {
+    content: ' %';
+} */
+
+.toggle i {
+    
+    border-radius:10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,0.3);
+    padding: 2rem;
+    min-width: 400px;
+    gap: 20px;
+    
+    
+    }
+
+    
+.storage-box {
+    border-radius:10px ;
+    background-color: rgb(246,250,253);
+    padding: 1rem;
+    border: 1px solid rgb(236,237,250);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,0.3);
+}
+
+.storage-box h1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom:0.5rem
+}
+
+.storage-box p {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.progress-bar {
+    background-color:rgba(255,255,254) ;
+    width:100%;
+    border: 1px solid rgb(236,237,250);
+    height: 20px;
+    border-radius: 20px;
+    padding: 4px
+}
+.progress {
+    width: 30%;
+    background-color: #000;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.circle {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    height:40px;
+    aspect-ratio: 1;
+    background-image: linear-gradient(grey,lightgreen);
+    border-radius: 50px;
+     animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.inner-circle {
+    height: 30px;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 50px;
+    r
+}
+
+.status-box {
+    width: 100%
+}
+
+
+.status-item   {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right:0.5rem;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.status-item i.bx.bx-loader-alt, .bx.bxs-check-circle,.bx.bx-circle {
+    font-size: 3rem;
+    
+}
+
+.bx.bxs-check-circle {
+    color:green
+}
+
+.bx.bx-loader-alt,.bx.bx-circle {
+    color: rgba(0,0,0,0.3)
+}
+
+
+.bx.bx-cog {
+    font-size: 1.7rem;
+   color: rgba(0,0,0,0.6);
+   transition: transform .7s ease-in-out;
+   
+}
+.item-content {
+    width:100%;
+    margin-left:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    
+}
+
+.bx.bx-cog:hover {
+    transform: rotate(360deg);
+    
+}
+
+.item-content h2 {
+    font-weight: 500;
+    
+    
+}
+
+.item-content p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(0,0,0,0.7);
+}
+
+hr {
+    border: 1px solid rgb(225,233,251);
+}
+
+.downloads {
+    border: 2px solid rgb(163,174,213);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    width:60%;
+    height: 50px;
+    box-shadow: 0 1px 10px -5px rgba(0,0,0,0.3);
+    background-color:rgba(255,255,254) ;
+}
+
+.downloads:active {
+    box-shadow: none;
+    transform: translateY(1px);
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
